@@ -1,0 +1,87 @@
+<?php
+session_start();
+?>
+<html lang="en">
+ <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PataKeja-Homepage</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap/css/customStyle.css" rel="stylesheet" />
+  </head>
+  <body>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fixed">
+    <div class="navbar-header">
+     <a href="index.php" class="navbar-brand active">Pata Keja</a> 
+    </div>
+    <ul class="nav navbar-nav">
+    <li><a href="login.php">Login</a></li>
+    <li><a href="register.php">Register</a></li>
+    </ul>
+    <form action="search.php" method="POST" class="navbar-form navbar-right" >
+    <div class="input-group">  
+       <input type="text" class="form-control" name="hostelname" placeholder="Search for Hostel" />
+      <span class="input-group-btn">
+        <input  type="submit" name="searchnow" class="btn btn-default" value="Search" />
+      </span>
+        
+      </div>
+
+
+  </form>
+    </div>
+    
+    </nav>
+ 
+  <div class="row">
+  <div id="imageCarousel" class="carousel slide" data-interval="200" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="item active">
+      <img src="images/h0.jpg" class="img-responsive"/> 
+       <div class="carousel-caption">
+         <h4>pata keja</h4>
+       </div> 
+ </div>
+ <div class="item">
+      <img src="images/host.jpg" class="img-responsive"/> 
+       <div class="carousel-caption">
+         <h4>pata keja</h4>
+       </div> 
+ </div>
+ <div class="item">
+      <img src="images/contact.jpg" class="img-responsive"/> 
+       <div class="carousel-caption">
+         <h4>pata keja</h4>
+       </div> 
+ </div>
+
+
+    </div>
+
+
+  </div>
+    
+  </div>
+ 
+      
+
+      
+  </div>
+ 
+    
+
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="bootsrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    %(document).ready(function)(){
+      $('$imageCarousel').carousel();   
+    }
+
+    </script>
+   
+  </body>
+</html>
+

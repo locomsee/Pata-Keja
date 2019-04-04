@@ -1,0 +1,7 @@
+if(isset($_POST['logout'])) {
+
+$sql = "DELETE FROM $idicao WHERE idcode=".$idcode."";
+
+mysqli_query($connect,$sql);
+
+}
